@@ -26,6 +26,14 @@ Hangman Worlds is a terminal-based word-guessing game developed using Python. Th
 python hangman.py
 ```
 
+## How to play
+- Enter one English letter at a time.
+- Read the clue shown on the screen.
+- Type `hint` once per round to reveal one hidden letter and receive an extra hint. This costs one incorrect attempt.
+- Repeated guesses do not cost an attempt.
+- Type `quit` to exit the current round.
+
+
 ## Learning Outcomes
 - Using variables and data types
 - Applying loops and conditional statements
