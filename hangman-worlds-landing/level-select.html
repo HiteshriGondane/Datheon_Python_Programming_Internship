@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#17113b" /><script src="theme.js"></script>
+  <title>Choose Your Level — Hangman Worlds</title>
+  <link rel="stylesheet" href="level-select.css" />
+</head>
+<body>
+  <main class="level-page" id="levelPage">
+    <div class="stars" id="stars" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Back to Hangman Worlds home">
+        <span class="brand-mark">H<span>!</span></span>
+        <span class="brand-name">HANGMAN <b>WORLDS</b></span>
+      </a>
+      <div class="settings" aria-label="Game settings">
+        <button class="setting-toggle active" id="soundToggle" type="button" aria-pressed="true">
+          <span class="setting-icon" id="soundIcon">♫</span><span class="setting-copy"><b>SOUND</b><small id="soundStatus">ON</small></span><span class="switch"><i></i></span>
+        </button>
+        <button class="setting-toggle active" id="vibrationToggle" type="button" aria-pressed="true">
+          <span class="setting-icon vibration-icon">〰</span><span class="setting-copy"><b>VIBRATION</b><small id="vibrationStatus">ON</small></span><span class="switch"><i></i></span>
+        </button>
+        <button class="setting-toggle theme-toggle" id="themeToggle" type="button" aria-pressed="false" aria-label="Switch theme"><span class="setting-icon" data-theme-icon>☾</span><span class="setting-copy"><b>THEME</b><small data-theme-label>DARK</small></span><span class="switch"><i></i></span></button>
+      </div>
+    </header>
+
+    <section class="choose-section">
+      <div class="section-copy">
+        <div class="eyebrow"><span>✦</span> YOUR ADVENTURE, YOUR RULES <span>✦</span></div>
+        <h1>CHOOSE YOUR<br><span>CHALLENGE!</span></h1>
+        <p>Every word is a new quest. Pick the level that feels right for you, little word explorer!</p>
+      </div>
+
+      <div class="island-scene" aria-label="A cheerful cartoon fantasy island">
+        <div class="moon"></div><div class="cloud cloud-a"></div><div class="cloud cloud-b"></div>
+        <span class="spark spark-a">✦</span><span class="spark spark-b">✧</span><span class="letter-float letter-a">A</span><span class="letter-float letter-q">?</span>
+        <div class="island-shadow"></div>
+        <div class="island">
+          <div class="island-hill hill-a"></div><div class="island-hill hill-b"></div>
+          <div class="tree tree-a"><i></i><b></b></div><div class="tree tree-b"><i></i><b></b></div>
+          <div class="sign"><small>WORD</small><b>QUEST!</b></div>
+          <span class="flower flower-a">✿</span><span class="flower flower-b">✿</span><span class="flower flower-c">✿</span>
+        </div>
+        <div class="mascot" id="mascot" aria-label="Friendly explorer mascot">
+          <div class="hat"><i></i></div><div class="head"><span class="eye eye-a"></span><span class="eye eye-b"></span><span class="blush blush-a"></span><span class="blush blush-b"></span><span class="mouth"></span></div>
+          <div class="torso"><i></i></div><div class="arm arm-a"></div><div class="arm arm-b"></div><div class="foot foot-a"></div><div class="foot foot-b"></div>
+          <div class="speech" id="speech">Pick your quest! <b>☺</b></div>
+        </div>
+      </div>
+
+      <div class="level-heading"><span class="heading-icon">★</span><div><h2>SELECT YOUR LEVEL</h2><p>Choose wisely — you can do this!</p></div></div>
+      <div class="levels" role="group" aria-label="Choose difficulty level">
+        <button class="level-card easy selected" data-level="easy" type="button" aria-pressed="true">
+          <span class="level-art"><span class="sun">☀</span><span class="sprout">♣</span></span>
+          <span class="level-info"><b>EASY</b><small>Warm-up adventure</small><em>Short words · More chances</em></span><span class="select-mark">✓</span>
+        </button>
+        <button class="level-card medium" data-level="medium" type="button" aria-pressed="false">
+          <span class="level-art"><span class="mountain">▲</span><span class="star-small">✦</span></span>
+          <span class="level-info"><b>MEDIUM</b><small>Explorer's trail</small><em>Trickier words · Balanced</em></span><span class="select-mark">✓</span>
+        </button>
+        <button class="level-card hard" data-level="hard" type="button" aria-pressed="false">
+          <span class="level-art"><span class="crystal">◆</span><span class="moon-small">☾</span></span>
+          <span class="level-info"><b>HARD</b><small>Legendary quest</small><em>Long words · Expert mode</em></span><span class="select-mark">✓</span>
+        </button>
+      </div>
+      <div class="bottom-actions">
+        <a class="back-button" href="index.html">← BACK</a>
+        <button class="continue-button" id="continueButton" type="button"><span>LET'S PLAY!</span><b>➜</b></button>
+      </div>
+      <p class="hint" id="levelHint" aria-live="polite">Easy mode selected — a perfect place to begin!</p>
+    </section>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <footer><span>✦ ONE LITTLE WORD AT A TIME</span><span>02 <i></i> LEVEL SELECT</span></footer>
+  </main>
+  <script src="level-select.js"></script>
+</body>
+</html>

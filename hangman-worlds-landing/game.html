@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#17113b"><script src="theme.js"></script>
+  <title>Word Quest — Hangman Worlds</title><link rel="stylesheet" href="game.css">
+</head>
+<body>
+<main class="game-page" id="gamePage">
+  <div class="stars" id="stars" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="brand-mark">H<span>!</span></span><span class="brand-name">HANGMAN <b>WORLDS</b></span></a>
+    <div class="game-top-actions"><a class="home-button" href="index.html" aria-label="Go to home" title="Home">⌂</a><div class="settings">
+      <button class="setting-toggle active" id="soundToggle" type="button" aria-pressed="true"><span class="setting-icon">♫</span><span class="setting-copy"><b>SOUND</b><small id="soundStatus">ON</small></span><span class="switch"><i></i></span></button>
+      <button class="setting-toggle active" id="vibrationToggle" type="button" aria-pressed="true"><span class="setting-icon vibration-icon">〰</span><span class="setting-copy"><b>VIBRATION</b><small id="vibrationStatus">ON</small></span><span class="switch"><i></i></span></button>
+    </div></div>
+  </header>
+  <section class="game-layout">
+    <div class="game-heading"><div class="eyebrow">✦ THE FANTASY ISLAND WORD QUEST ✦</div><h1>GUESS THE <span>WORD!</span></h1><p>Pick letters and solve the mystery before your chances run out.</p><div class="badges"><span id="levelBadge">EASY QUEST</span><span id="categoryBadge">NATURE</span></div><div class="timer-control" aria-label="Round timer"><div class="timer-readout"><span aria-hidden="true">⏱</span><strong id="timerText">00:00</strong></div></div></div>
+    <div class="play-card">
+      <div class="game-art">
+        <div class="sun">☀</div><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div><div class="floating-star star-one">✦</div><div class="floating-star star-two">✧</div>
+        <div class="gallows"><div class="gallows-top"></div><div class="gallows-pole"></div><div class="gallows-base"></div><div class="gallows-rope"></div><svg id="hangmanDrawing" viewBox="0 0 150 180" aria-label="Hangman drawing"><circle class="draw-part" data-step="1" cx="112" cy="42" r="17"/><line class="draw-part" data-step="2" x1="112" y1="59" x2="112" y2="105"/><line class="draw-part" data-step="3" x1="112" y1="70" x2="88" y2="88"/><line class="draw-part" data-step="4" x1="112" y1="70" x2="136" y2="88"/><line class="draw-part" data-step="5" x1="112" y1="105" x2="91" y2="133"/><line class="draw-part" data-step="6" x1="112" y1="105" x2="133" y2="133"/></svg></div>
+        <div class="island-ground"><span>✿</span><span>♣</span><span>✿</span></div><div class="mascot"> <div class="hat"></div><div class="face"><i></i><i></i><b></b></div><div class="body"></div><div class="feet"></div></div>
+      </div>
+      <div class="puzzle-area"><div class="clue-label">YOUR CLUE</div><h2 id="clueText">A place where flowers grow</h2><div class="word-slots" id="wordSlots" aria-label="Mystery word"></div><div class="mistakes-line"><span id="mistakesText">Mistakes: 0 / 6</span><span id="livesText">♥ ♥ ♥ ♥ ♥ ♥</span></div><div class="keyboard" id="keyboard" aria-label="Choose a letter"></div><div class="game-message" id="gameMessage" aria-live="polite">Choose your first letter, word explorer!</div><div class="game-actions"><button class="secondary-button hint-icon-button" id="hintButton" type="button" aria-label="Show hint" title="Show hint">💡</button><button class="primary-button" id="nextButton" type="button" hidden>PLAY AGAIN ↻</button></div></div>
+    </div>
+    <div class="bottom-actions"><a href="level-select.html" class="back-button">← CHANGE LEVEL</a><span>ONE LETTER AT A TIME · YOU'VE GOT THIS!</span></div>
+  </section>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="praise-overlay" id="praiseOverlay" aria-live="polite" aria-atomic="true"><div class="praise-card"><span class="praise-stars">✦ ✧ ✦</span><strong id="praiseText">AMAZING 🎊</strong><span class="praise-stars">✦ ✧ ✦</span></div></div>
+</main><script src="game.js"></script>
+</body></html>
