@@ -1,9 +1,87 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Hangman Worlds</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#17113b" /><script src="theme.js"></script>
+  <title>Hangman Worlds — Adventure Starts Here</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Hangman Worlds Game Website</h1>
+  <main class="landing" id="landing">
+    <div class="sky-glow" aria-hidden="true"></div>
+    <div class="stars" aria-hidden="true" id="stars"></div>
+
+    <div class="topline">
+      <a class="brand" href="#landing" aria-label="Hangman Worlds home">
+        <span class="brand-mark">H<span>!</span></span>
+        <span class="brand-name">HANGMAN <b>WORLDS</b></span>
+      </a>
+      <div class="top-pill"><span class="live-dot"></span> YOUR NEXT ADVENTURE AWAITS</div>
+    </div>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="sparkle">✦</span> A WORD GAME LIKE NO OTHER <span class="sparkle">✦</span></div>
+        <h1 id="hero-title">GUESS THE WORD.<br /><span>UNLOCK A WORLD.</span></h1>
+        <p class="intro">A little mystery. A lot of adventure.<br class="desktop-break" /> Think fast, guess smart, and discover where words can take you.</p>
+        <button class="start-button" id="startButton" type="button">
+          <span class="button-icon" aria-hidden="true">▶</span>
+          <span>START GAME</span>
+          <span class="button-arrow" aria-hidden="true">↗</span>
+        </button>
+        <div class="microcopy"><span class="checkmark">✓</span> FREE TO PLAY <i>•</i> <span>MADE FOR CURIOUS MINDS</span></div>
+      </div>
+
+      <div class="illustration" id="illustration" aria-label="Cartoon adventure island with a friendly hangman character">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="moon"></div>
+        <div class="floating-star star-a">✦</div>
+        <div class="floating-star star-b">✧</div>
+        <div class="floating-star star-c">✦</div>
+        <div class="floating-letter letter-a">?</div>
+        <div class="floating-letter letter-b">A</div>
+        <div class="floating-letter letter-c">Z</div>
+        <div class="cloud cloud-one"><span></span><i></i></div>
+        <div class="cloud cloud-two"><span></span><i></i></div>
+        <div class="island-shadow"></div>
+        <div class="island">
+          <div class="island-grass"></div>
+          <div class="hill hill-back"></div>
+          <div class="hill hill-front"></div>
+          <div class="tiny-tree tree-left"><b></b><i></i><span></span></div>
+          <div class="tiny-tree tree-right"><b></b><i></i><span></span></div>
+          <div class="wood-sign"><span>WORD</span><b>QUEST!</b></div>
+          <div class="path"></div>
+          <div class="flower flower-one">✿</div><div class="flower flower-two">✿</div><div class="flower flower-three">✿</div>
+        </div>
+        <div class="character-wrap" id="character">
+          <div class="character-shadow"></div>
+          <div class="character">
+            <div class="hat"><span></span></div>
+            <div class="face">
+              <div class="cheek cheek-left"></div><div class="cheek cheek-right"></div>
+              <div class="eye eye-left"></div><div class="eye eye-right"></div>
+              <div class="smile"></div>
+            </div>
+            <div class="body"><span class="overall-strap"></span><span class="pocket"></span></div>
+            <div class="arm arm-left"></div><div class="arm arm-right"></div>
+            <div class="leg leg-left"></div><div class="leg leg-right"></div>
+          </div>
+          <div class="character-speech">Psst… ready? <span>☺</span></div>
+        </div>
+        <div class="mini-card card-left"><span class="mini-icon">?</span><span><b>CRACK THE CLUE</b><small>One letter at a time</small></span></div>
+        <div class="mini-card card-right"><span class="mini-icon trophy">★</span><span><b>BE THE WORD HERO</b><small>Can you solve it?</small></span></div>
+      </div>
+    </section>
+
+    <footer class="bottomline">
+      <div class="footer-note"><span class="footer-star">✦</span> EVERY WORD OPENS A NEW POSSIBILITY</div>
+      <div class="page-count"><span>01</span><i></i> THE ADVENTURE BEGINS</div>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite">Adventure mode is ready! Connect your game screen to continue.</div>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
