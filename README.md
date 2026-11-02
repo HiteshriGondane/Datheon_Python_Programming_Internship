@@ -20,6 +20,15 @@ Welcome to my internship project repository!
 
 This repository showcases my hands-on learning experience through Python programming tasks and application development. Each project focuses on practical implementation, logical thinking, and building useful applications.
 
+---
+
+## 📂 Repository Structure
+
+<p align="center">
+  <img src="repository-structure.png" alt="Datheon Internship Repository Structure" width="100%">
+</p>
+    ---
+
 ## 🎯 Internship Projects
 
 ### 🎮 Task 1 — Hangman: Python Console Game
@@ -104,25 +113,7 @@ python portfolio.py
 
 </div>
 
-## 📂 Repository Structure
 
-```text
-Datheon_Python_Programming_Internship/
-│
-├── README.md
-│
-├── Task1_1_Hangman/
-│   ├── hangman.py
-│   └── README.md
-│
-├── hangman-worlds-landing/
-│   └── Website files
-│
-└── Task_2_Stock_Portfolio_Tracker/
-    ├── portfolio.py
-    ├── README.md
-    └── market_prices_sample.csv
-```
 
 ## 🌱 What I Learned
 
@@ -134,6 +125,114 @@ Datheon_Python_Programming_Internship/
 - Deploying websites using GitHub Pages.
 
 ---
+
+### 🗂️ Task 3 — Automated File Organizer and Cleanup Utility
+
+A Python-based utility that automatically organizes files into separate folders based on their file extensions.
+
+**✨ Key Features**
+
+- 📁 Automatically organizes files into category-wise folders.
+- 📄 Moves PDF and document files into the Documents folder.
+- 🖼️ Organizes JPG and PNG files into the Images folder.
+- 📦 Sorts ZIP files into the Archives folder.
+- 💻 Supports videos and code files.
+- 🔄 Uses Python `os.scandir()` and `shutil.move()` for file operations.
+- 🛡️ Handles file permission errors and duplicate filenames.
+- 📊 Displays an execution summary showing total files relocated.
+- 📝 Generates a log file to record file operations.
+
+▶️ **Run the project**
+
+```bash
+cd Task_3_File_Organizer
+python organizer.py
+```
+
+**📁 Folder:** `Task_3_File_Organizer/`
+
+---
+
+### 🤖 Task 4 — Rule-Based Interactive Terminal Assistant / Chatbot
+
+A Python-based interactive terminal chatbot designed to answer customer support and product-related questions using keyword matching and regular expressions.
+
+## ✨ Key Features
+
+- 💬 Interactive terminal-based conversation.
+- 🔍 Identifies user queries using keywords and regular expressions.
+- 🕒 Answers questions about business hours.
+- 📦 Provides product information and FAQ responses.
+- 🧠 Supports multiple-intent matching.
+- 🔄 Maintains a simple conversational flow.
+- ⚠️ Provides helpful fallback responses for unrecognized queries.
+- 👋 Supports exit commands such as `bye`, `exit`, and `quit`.
+- 📂 Supports loading FAQ data from a JSON file.
+- 🛡️ Includes basic input and error handling.
+
+## 🛠️ Technologies Used
+
+- Python 3
+- `re` — Regular Expressions
+- `json` — FAQ Dataset Handling
+
+## 📁 Project Structure
+
+```text
+Task_4_Chatbot/
+│
+├── chatbot.py
+├── README.md
+└── sample_faq.json
+```
+
+## ▶️ How to Run
+
+1. Open the project folder in VS Code.
+2. Open the terminal.
+3. Run the following command:
+
+```bash
+python chatbot.py
+```
+
+## 💬 Example Interaction
+
+```text
+====================================
+       CUSTOMER SUPPORT CHATBOT
+====================================
+
+Bot: Hello! Welcome to our support assistant.
+Bot: How can I help you today?
+
+You: What are your business hours?
+Bot: Our business hours are ...
+
+You: Tell me about your products.
+Bot: Here is some information about our products ...
+
+You: bye
+Bot: Thank you for chatting with us. Goodbye!
+```
+
+*Note: Example responses will be finalized during implementation.*
+
+## 🎯 Learning Outcomes
+
+- Understanding rule-based chatbot development.
+- Using regular expressions for text processing.
+- Implementing keyword-based intent recognition.
+- Working with JSON datasets.
+- Managing conversational states.
+- Handling multiple intents and unknown queries.
+
+---
+
+**Task 4 — Datheon Python Programming Internship**
+
+*Built with Python 🐍*
+
 
 <div align="center">
 
