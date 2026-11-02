@@ -27,7 +27,8 @@ This repository showcases my hands-on learning experience through Python program
 <p align="center">
   <img src="repository-structure.png" alt="Datheon Internship Repository Structure" width="100%">
 </p>
-    ---
+   
+---
 
 ## 🎯 Internship Projects
 
