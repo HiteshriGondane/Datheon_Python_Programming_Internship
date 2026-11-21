@@ -1,0 +1,20 @@
+{
+    "delivery": {
+        "patterns": [
+            "\\b(delivery|shipping|dispatch)\\b"
+        ],
+        "response": "Delivery usually takes 3 to 5 business days."
+    },
+    "warranty": {
+        "patterns": [
+            "\\b(warranty|guarantee)\\b"
+        ],
+        "response": "Our products come with a 1-year warranty."
+    },
+    "payment": {
+        "patterns": [
+            "\\b(payment|pay|cash|online payment)\\b"
+        ],
+        "response": "We accept online payments and cash on delivery."
+    }
+}
