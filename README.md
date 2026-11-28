@@ -235,6 +235,16 @@ Bot: Thank you for chatting with us. Goodbye!
 *Built with Python 🐍*
 
 
+---
+
+## 🏆 Internship Achievement – LinkedIn Post
+
+Successfully completed my 4-Week Python Programming Internship at Datheon with **9.3/10 (A+ Distinction)**.
+
+📢 [View My LinkedIn Achievement Post](https://lnkd.in/p/dKcCPnTK)
+
+---
+
 <div align="center">
 
 ## 🙋‍♀️ About Me
